@@ -1,11 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <center>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>event ticket</title>
-</head>
+<style>
+    .ticket {
+        color:black;
+        width: 1000px;
+        height: 550px;
+        margin: 50px auto;
+        padding: 50px;
+        border-radius: 20px;
+        border: 2px;
+        display: flex;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+
+    .user {
+        width:400px ;
+        border-radius: 20px;
+        border: 1px solid black;
+        box-shadow: 0 0 10px 2px gray;
+        border-right: none;
+        padding-block: 20px;
+        background-color: whitesmoke;
+
+    }
+    .event {
+        width:600px ;
+        border-radius: 20px;
+        border: 1px solid black;
+        box-shadow: 0 0 10px 2px gray;
+        border-left:1px dotted;
+        padding-block: 20px;
+        background-color: whitesmoke;
+
+    }
+
+    .event-title{
+     font-size:24px ;
+     font: 25px ;
+     font-style: italic;
+     color: palevioletred;
+    }
+    .event-end{
+        font-size: 20px;
+        font: 20px bolder;
+        color: #80d4ff ;
+    }
+
+    /* Mobile */
+        
+    @media (max-width:600px){
+        .ticket {
+            color: white;
+            border-radius: 20px;
+            border: 2px;
+            display: flex;
+            flex-direction:row ;
+            align-items: center;
+    }
+} 
+    .user {
+        border-right: none;
+        border-bottom: 0px;
+    }
+    .event {
+        border-top: none;
+        border-left:2px dotted;
+    }
+    /* tab */
+
+    @media (max-width:600px) and (max-width:800px) {
+        .ticket {
+            background-color: maroon;
+            height: auto;
+            width: auto;
+            border-radius: 20px;
+            border: 2px;
+            display: flex;
+            flex-direction:row ;
+            align-items: center;
+    }
+}
+    .user {
+        color:black;
+        width:400px ;
+        border-right:none;
+    }
+    
+
+    /* laptop */
+    @media(min-width:602px) and (max-width:800px){}
+</style>
+
+
 <body>
-    <h1>ticket</h1>
+    <h1>EVENT TICKET</h1>
+    <div class="ticket">
+
+        <div class="user">
+            <span class="ticket-number" >Ticket No:204B032</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1rFvVOP-j3cGX-ynBe_7oZcV9BX_LCkMg3w&s"height ="150px"width="350px">
+          <p class="event-title">Event:FE INDUCTION PROGRAM</p>
+          <p>
+            Date:01/02/2025</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuWaP2yKK_8ZL_Qr0SiDYiMgxJt08DtlL2xtvUlZEdab89UAY-zBSQ-27Et46ieB-lQ_A&usqp=CAU"height="150px" width="180px">
+            <img src="https://i.pinimg.com/736x/6a/46/21/6a4621e16ee811bc5ff2e3cd8b046956.jpg" height="150px"width="180px">
+            <h3>location:c1 buliding seminar hall</h3>
+           <p class="event-end"># ENJOY THE EVENT #</p>
+          </div> 
+        <div class="event">
+            <span class="ticket-number" >Ticket No:204B032</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1rFvVOP-j3cGX-ynBe_7oZcV9BX_LCkMg3w&s"height ="150px"width="550px">
+            <p class="event-title">Event:FE INDUCTION PROGRAM</p>
+            <p>
+                Date:01/02/2025</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuWaP2yKK_8ZL_Qr0SiDYiMgxJt08DtlL2xtvUlZEdab89UAY-zBSQ-27Et46ieB-lQ_A&usqp=CAU"height="150px" width="250px">
+                <img src="https://i.pinimg.com/736x/6a/46/21/6a4621e16ee811bc5ff2e3cd8b046956.jpg" height="150px"width="250px">
+                <h3>location:c1 buliding seminar hall</h3>
+                  <p class="event-end"># ENJOY THE EVENT #</p></div>
+    </div>
+    </center>
 </body>
 </html>
