@@ -9,7 +9,7 @@
     .ticket {
         color:black;
         width: 1000px;
-        height: 550px;
+        height: 600px;
         margin: 50px auto;
         padding: 50px;
         border-radius: 20px;
@@ -17,10 +17,14 @@
         display: flex;
         font-family: 'Courier New', Courier, monospace;
     }
+    .ticket-image{
+        width: 300px;
+        height: 100px;
+    }
 
 
     .user {
-        width:400px ;
+        width:400 ;
         border-radius: 20px;
         border: 1px solid black;
         box-shadow: 0 0 10px 2px gray;
@@ -59,42 +63,37 @@
             color: white;
             border-radius: 20px;
             border: 2px;
-            display: flex;
-            flex-direction:row ;
-            align-items: center;
+            height: 550;
+            width:1000px ;
+        }
+        .ticket-image{
+            width: 100px;
+            height: 80px;
+        }
+        .user{
+            width:300px ;
+            height: 600px;
+        }
+        .event{
+            width: 400px;
+            height: 600px;
+        }
     }
-} 
-    .user {
-        border-right: none;
-        border-bottom: 0px;
-    }
-    .event {
-        border-top: none;
-        border-left:2px dotted;
-    }
-    /* tab */
-
-    @media (max-width:600px) and (max-width:800px) {
-        .ticket {
-            background-color: maroon;
-            height: auto;
-            width: auto;
+    /* Laptop */
+    @media (min-width:801px) and (max-width:1200px) {
+        .ticket{
+            color: white;
+            border: 20px;
             border-radius: 20px;
-            border: 2px;
-            display: flex;
-            flex-direction:row ;
-            align-items: center;
+            height: 600px;
+            width: 1000px;
+        }
+        .ticket-image{
+            height: 100px;
+            width: 200px;
+        }
     }
-}
-    .user {
-        color:black;
-        width:400px ;
-        border-right:none;
-    }
-    
 
-    /* laptop */
-    @media(min-width:602px) and (max-width:800px){}
 </style>
 
 
@@ -103,23 +102,23 @@
 
         <div class="user">
             <span class="ticket-number" >Ticket No:204B032</span>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1rFvVOP-j3cGX-ynBe_7oZcV9BX_LCkMg3w&s"height ="150px"width="350px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1rFvVOP-j3cGX-ynBe_7oZcV9BX_LCkMg3w&s" class ="ticket-image" alt ="ticket"/>
           <p class="event-title">Event:FE INDUCTION PROGRAM</p>
           <p>
             Date:01/02/2025</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuWaP2yKK_8ZL_Qr0SiDYiMgxJt08DtlL2xtvUlZEdab89UAY-zBSQ-27Et46ieB-lQ_A&usqp=CAU"height="150px" width="180px">
-            <img src="https://i.pinimg.com/736x/6a/46/21/6a4621e16ee811bc5ff2e3cd8b046956.jpg" height="150px"width="180px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuWaP2yKK_8ZL_Qr0SiDYiMgxJt08DtlL2xtvUlZEdab89UAY-zBSQ-27Et46ieB-lQ_A&usqp=CAU" class="ticket-image" alt="ticket"/>
+            <img src="https://i.pinimg.com/736x/6a/46/21/6a4621e16ee811bc5ff2e3cd8b046956.jpg" class="ticket-image" alt="ticket"/>
             <h3>location:c1 buliding seminar hall</h3>
            <p class="event-end"># ENJOY THE EVENT #</p>
           </div> 
         <div class="event">
             <span class="ticket-number" >Ticket No:204B032</span>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1rFvVOP-j3cGX-ynBe_7oZcV9BX_LCkMg3w&s"height ="150px"width="550px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1rFvVOP-j3cGX-ynBe_7oZcV9BX_LCkMg3w&s" class="ticket-image" alt="ticket"/>
             <p class="event-title">Event:FE INDUCTION PROGRAM</p>
             <p>
                 Date:01/02/2025</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuWaP2yKK_8ZL_Qr0SiDYiMgxJt08DtlL2xtvUlZEdab89UAY-zBSQ-27Et46ieB-lQ_A&usqp=CAU"height="150px" width="250px">
-                <img src="https://i.pinimg.com/736x/6a/46/21/6a4621e16ee811bc5ff2e3cd8b046956.jpg" height="150px"width="250px">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuWaP2yKK_8ZL_Qr0SiDYiMgxJt08DtlL2xtvUlZEdab89UAY-zBSQ-27Et46ieB-lQ_A&usqp=CAU" class="ticket-image" alt="ticket"/>
+                <img src="https://i.pinimg.com/736x/6a/46/21/6a4621e16ee811bc5ff2e3cd8b046956.jpg" class="ticket-image" alt="ticket"/>
                 <h3>location:c1 buliding seminar hall</h3>
                   <p class="event-end"># ENJOY THE EVENT #</p></div>
     </div>
